@@ -1,0 +1,25 @@
+﻿* {
+    font-family:'Segoe UI' ;
+}
+
+[title~=attr] {
+    color:#ffffff;
+}
+
+[tile~=attribute] {
+    color: #ff00dc;
+}
+
+p {
+    color:#808080;
+}
+
+.classTest {
+    color: aqua;
+}
+
+#divTest {
+    color: blueviolet;
+}
+h1{color:#000000;}
+body{text-align:center;background-color:palegreen;}
