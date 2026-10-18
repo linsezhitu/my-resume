@@ -121,6 +121,9 @@ section > h2::before {
 .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--head); }
 .card p { margin: 0; font-size: 15px; }
 .card .muted { color: var(--dim); font-size: 14px; margin-bottom: 8px; }
+a.card { display: block; color: inherit; text-decoration: none; }
+a.card:hover { text-decoration: none; }
+.card .go { color: var(--accent); font-size: 14px; font-weight: 600; }
 
 /* 技能 chips */
 .stack { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -130,6 +133,26 @@ section > h2::before {
   transition: transform .18s ease, border-color .18s ease, color .18s ease;
 }
 .chip:hover { transform: translateY(-2px); border-color: var(--accent-2); color: var(--head); }
+
+/* 个人履历 */
+.exp { display: flex; flex-direction: column; gap: 14px; }
+.exp-item {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px 24px;
+  transition: border-color .18s ease, transform .18s ease;
+}
+.exp-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.exp-item h3 {
+  margin: 0 0 8px; font-size: 16.5px; color: var(--head);
+  display: flex; align-items: center; gap: 9px;
+}
+.exp-item h3::before {
+  content: ""; width: 9px; height: 9px; border-radius: 2px;
+  background: var(--accent); flex: 0 0 auto;
+}
+.exp-item ul { margin: 0; padding-left: 18px; font-size: 14.6px; }
+.exp-item li { margin: 4px 0; }
+.exp-item li::marker { color: var(--accent); }
 
 footer {
   border-top: 1px solid var(--line);
