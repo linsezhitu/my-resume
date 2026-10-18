@@ -49,7 +49,13 @@ nav {
 nav .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
 nav .brand { font-weight: 700; color: var(--head); font-size: 17px; }
 nav .brand span { color: var(--accent); }
-nav .nav-sub { margin-left: auto; font-size: 12.5px; color: var(--dim); letter-spacing: 0.4px; }
+.back-btn {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(140deg, var(--accent), var(--accent-2));
+  color: #fff; border-radius: 9px; padding: 8px 16px;
+  font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap;
+}
+.back-btn:hover { filter: brightness(1.08); color: #fff; text-decoration: none; }
 
 /* ---------- hero ---------- */
 header.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
